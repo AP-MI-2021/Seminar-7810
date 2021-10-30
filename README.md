@@ -13,8 +13,8 @@ Scrieți folosind OOP un program pentru gestionarea unei firme de taxi. Vor fi s
 8. Undo+Redo în mod eficient.
 
 Propunere de organizare pe iterații:
-- Iterația 1: 1-3, repository-uri distincte.
-- Iterația 2: 4-7, repository generic.
+- Iterația 1: 1-3, repository-uri distincte, validatori.
+- Iterația 2: 4-7, repository generic, excepții proprii.
 - Iterația 3: 7-8, filter, map, lambda, list comprehensions, recursivitate etc.
 
 Folosiți arhitectură stratificată conform discuțiilor de la curs.
