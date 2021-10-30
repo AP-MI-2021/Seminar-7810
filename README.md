@@ -10,7 +10,7 @@ Scrieți folosind OOP un program pentru gestionarea unei firme de taxi. Vor fi s
 5. Ordonarea mașinilor crescător după costul mediu / km.
 6. Determinarea străzilor cu cele mai lungi comenzi (ca distanță).
 7. Alte rapoarte.
-8. Undo+Redo în mod eficiență.
+8. Undo+Redo în mod eficient.
 
 Propunere de organizare pe iterații:
 - Iterația 1: 1-3, repository-uri distincte.
