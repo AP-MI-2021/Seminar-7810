@@ -2,7 +2,7 @@ from Service.masinaService import MasinaService
 
 
 class Consola:
-    def __init__(self,masinaService: MasinaService):
+    def __init__(self, masinaService: MasinaService):
         self.__masinaService = masinaService
 
     def runMenu(self):
@@ -41,9 +41,13 @@ class Consola:
     def ui_adaugare_masina(self):
         try:
             id_masina = input("Dati id-ul masinii")
-            indicativ = int(input("Dati indicativul masinii"))
-            nivel_confort = input("Dati nivelul de confort al masinii (standard, ridicat, premium)")
-            plata_card = input("Mentionati daca plata se face cu cardul (da, nu)")
+            indicativ = int(input(
+                "Dati indicativul masinii"))
+            nivel_confort = input(
+                "Dati nivelul de confort al masinii "
+                "(standard, ridicat, premium)")
+            plata_card = input(
+                "Mentionati daca plata se face cu cardul (da, nu)")
             model = input("Dati modelul masinii")
 
             self.__masinaService.adauga(id_masina, indicativ, nivel_confort, plata_card, model)
@@ -69,13 +73,20 @@ class Consola:
     def ui_modificare_masina(self):
         try:
             id_masina = input("Dati id-ul masinii de modificat")
-            indicativ = int(input("Dati noul indicativ al masinii sau 0 pt. a nu il modifica"))
+            indicativ = int(input("Dati noul indicativ al masinii"
+                                  " sau 0 pt. a nu il modifica"))
             nivel_confort = input(
-                "Dati nou; nivelul de confort al masinii (standard, ridicat, premium) sau stirng gol pt. a nu il modifica")
-            plata_card = input("Mentionati daca plata se face cu cardul (da, nu) sau stirng gol pt. a nu il modifica")
-            model = input("Dati noul model masinii sau stirng gol pt. a nu il modifica")
+                "Dati nou; nivelul de confort al masinii"
+                " (standard, ridicat, premium) sau stirng gol "
+                "pt. a nu il modifica")
+            plata_card = input("Mentionati daca plata se face cu cardul"
+                               " (da, nu) sau stirng gol "
+                               "pt. a nu il modifica")
+            model = input("Dati noul model masinii "
+                          "sau stirng gol pt. a nu il modifica")
 
-            self.__masinaService.modifica(id_masina, indicativ, nivel_confort, plata_card, model)
+            self.__masinaService.modifica(
+                id_masina, indicativ, nivel_confort, plata_card, model)
         except ValueError as ve:
             print(ve)
         except KeyError as ke:

@@ -44,5 +44,7 @@ class MasinaRepository:
 
     def modifica(self, masina: Masina):
         if self.getById(masina.idMasina) is None:
-            raise KeyError(f"Nu exista deja o maisna cu id-ul {masina.idMasina}")
+            raise KeyError(
+                f"Nu exista deja o maisna cu id-ul {masina.idMasina}"
+            )
         self._masini[masina.idMasina] = masina

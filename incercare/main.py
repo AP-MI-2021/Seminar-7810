@@ -4,10 +4,6 @@ from Service.masinaService import MasinaService
 from UI.console import Consola
 
 
-class Console(object):
-    pass
-
-
 def main():
     masinaRepository = MasinaRepositoryJson('masini.json')
     masinaValidator = MasinaValidator()
@@ -16,5 +12,6 @@ def main():
     console = Consola(masinaService)
 
     console.runMenu()
+
 
 main()
