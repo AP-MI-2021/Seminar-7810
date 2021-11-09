@@ -4,7 +4,9 @@ from Repository.masinaRepositoryJson import MasinaRepositoryJson
 
 
 class MasinaService:
-    def __init__(self, masiniRepository: MasinaRepositoryJson, masinaValidator: MasinaValidator):
+    def __init__(self,
+                 masiniRepository: MasinaRepositoryJson, 
+                 masinaValidator: MasinaValidator):
         self.__masiniRepository = masiniRepository
         self.__masinaValidator = masinaValidator
 

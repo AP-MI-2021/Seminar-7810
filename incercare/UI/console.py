@@ -50,7 +50,8 @@ class Consola:
                 "Mentionati daca plata se face cu cardul (da, nu)")
             model = input("Dati modelul masinii")
 
-            self.__masinaService.adauga(id_masina, indicativ, nivel_confort, plata_card, model)
+            self.__masinaService.adauga(
+                id_masina, indicativ, nivel_confort, plata_card, model)
         except ValueError as ve:
             print(ve)
         except KeyError as ke:
